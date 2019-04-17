@@ -1,0 +1,15 @@
+h2{
+	text-transform: uppercase;
+}
+#section0{
+	background: url(../img/slider_01.png) no-repeat center center;
+	background-size: contain;
+}
+
+.title-green{
+	color: #183029;
+}
+
+.title-gold{
+	color: #d1a157;
+}
