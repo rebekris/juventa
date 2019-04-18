@@ -6,6 +6,32 @@
 *{
 	font-family: dinNext, 'sans-serif';
 }
+*, body{
+	
+	font-size: 1.3rem;
+	
+}
+.section.dark{
+	color:white;
+}
+
+.texto-green{
+	color: #183029;
+}
+
+.texto-gold{
+	color: #d1a157;
+}
+.btn-descargar{	
+	padding: 15px 70px 15px 30px;
+	background: #183029 url(../img/ico-pdf.png) no-repeat 90% center;
+	color: #d1a157;
+	border-radius: 30px;
+}
+.btn-descargar:hover{
+	text-decoration: none;
+	color:#d1a157;
+}
 @media  (min-width: 1024px)
 {
 	
@@ -22,10 +48,17 @@ h3{
 }
 p{font-size: 14px;}
 
-#section0{
-	background: url(../img/slider_01.png) no-repeat center center;
-	background-size: cover;
+#section0 {
+	padding: 0;
 }
+#section0{
+	background-image: url(../img/slider_01.png);
+	background-repeat: no-repeat ;
+	background-position: center center;
+	background-size: cover;	
+}
+
+
 .section {
 	padding: 25px 0;
 }
@@ -35,17 +68,7 @@ p{font-size: 14px;}
 .section article.no-padding-left{
 	padding-left: 0;
 }
-.section.dark{
-	color:white;
-}
 
-.texto-green{
-	color: #183029;
-}
-
-.texto-gold{
-	color: #d1a157;
-}
 
 .right{
 	padding-left: 100px;
@@ -124,12 +147,25 @@ ul.tiendas li img{
     color: #183029;
 } 
 }
-@media (max-width: 768px) and (min-width: 320px)
+@media (min-width: 576px) 
 {
+	.hidden{display: none;}
 	#section0{
-		background: url(../img/slider_01-mobile.png) no-repeat center center !important;
+		background: url(../img/slide-sm-01.jpg) no-repeat center center !important;
 		background-size: cover;
 	}
+	.molecula{
+		margin-top: 0;
+	}
+	.text-cuerpo{
+		text-align: center;
+	}
+	.tabla{
+		margin: 10px 0 75px 0;
+		text-align: center;
+	}
+
+
   
 }
 
