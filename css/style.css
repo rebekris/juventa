@@ -1,15 +1,136 @@
-h2{
-	text-transform: uppercase;
-}
-#section0{
-	background: url(../img/slider_01.png) no-repeat center center;
-	background-size: contain;
+@font-face{
+	font-family: dinNext;
+  		src: url(fonts/DINNextLTPro-Regular.woff);
 }
 
-.title-green{
+*{
+	font-family: dinNext, 'sans-serif';
+}
+@media  (min-width: 1024px)
+{
+	
+
+
+h2{
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 1.8rem;
+}
+h3{
+	margin-bottom: 25px;
+	line-height: 40px;
+}
+p{font-size: 14px;}
+
+#section0{
+	background: url(../img/slider_01.png) no-repeat center center;
+	background-size: cover;
+}
+.section {
+	padding: 25px 0;
+}
+.section article{
+	padding-left: 100px;
+}
+.section article.no-padding-left{
+	padding-left: 0;
+}
+.section.dark{
+	color:white;
+}
+
+.texto-green{
 	color: #183029;
 }
 
-.title-gold{
+.texto-gold{
 	color: #d1a157;
 }
+
+.right{
+	padding-left: 100px;
+}
+
+.tabla{
+	margin: 35% 0 25px 0;
+}
+.btn-descargar{	
+	padding: 15px 70px 15px 30px;
+	background: #183029 url(../img/ico-pdf.png) no-repeat 90% center;
+	color: #d1a157;
+	border-radius: 30px;
+}
+.btn-descargar:hover{
+	text-decoration: none;
+	color:#d1a157;
+}
+svg {
+	height: 450px;
+}
+
+.texto-cuerpo{
+	position: absolute;
+    right: 0;
+    bottom: 5%;
+}
+.molecula{
+	margin-top: -80px;
+}
+ul.tiendas {
+	margin:0;
+	padding: 0
+}
+ul.tiendas li{
+	list-style: none;
+    display: inline;
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+ul.tiendas li.tienda a:hover img {
+    transform: scale(1.2);
+}
+ul.tiendas li img{
+	width: 100%;
+	transition: transform .2s;
+}
+.contacto{
+	background: #3a3731;
+	padding: 50px 0;
+	color: #878b89;
+	margin-top: 70px;
+}
+.copyright{
+	background: #4d4942;
+	color: #8d877e;
+	padding: 15px 0 0 0;
+}
+.ubicacion{
+	background-image: url(../img/mapa.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+/*Bullets*/
+.fp-right ul li:first-child a.active span,{
+	border: 2px double white;
+    color: white;
+}
+.fp-right ul li:nth-child(2) a.active span,
+#fp-nav ul li:nth-child(2):hover a.active span,
+.fp-right ul li:nth-child(2):hover a.active span{
+	border: 2px double #183029;
+    color: #183029;
+} 
+}
+@media (max-width: 768px) and (min-width: 320px)
+{
+	#section0{
+		background: url(../img/slider_01-mobile.png) no-repeat center center !important;
+		background-size: cover;
+	}
+  
+}
+
+
