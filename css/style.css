@@ -6,10 +6,22 @@
 *{
 	font-family: dinNext, 'sans-serif';
 }
-*, body{
+*, body, p{
 	
-	font-size: 1.3rem;
+	font-size: 14px;
 	
+}
+
+ul.tiendas {
+	margin:0;
+	padding: 0
+}
+ul.tiendas li{
+	list-style: none;
+    display: inline;
+    float: left;
+    width: 25%;
+    padding: 10px;
 }
 .section.dark{
 	color:white;
@@ -32,11 +44,145 @@
 	text-decoration: none;
 	color:#d1a157;
 }
+.ubicacion .fp-tableCell {
+    vertical-align: bottom;
+}
+
+.contacto{
+	background: #3a3731;
+	padding: 30px 0;
+	color: #878b89;
+	margin-top: 0px;
+}
+.contacto img{
+	width: 75%;
+}
+.copyright{
+	background: #4d4942;
+	color: #8d877e;
+	padding: 15px 0;
+}
+.ubicacion{
+	background-image: url(../img/mapa.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.molecula {
+	background: url(../img/molecula.png) no-repeat center center;
+	background-size: 65%;
+}
+
+@media(min-width: 992px)
+{
+	
+	.molecula{
+		margin-top: -30px;
+	    margin-bottom: -75px;
+	    position: relative;
+	}	
+
+.molecula .atomo{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 105px;
+    height: 75px;
+	position: absolute;
+    transition: transform .2s;
+}
+.molecula .atomo:hover{
+	transform: scale(1.2);
+}
+
+.molecula .atomo:hover:before{
+	display: block;
+	content: "";
+	width: 120px;
+    height: 55px;
+    position: absolute;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+.molecula .huesos{
+	background-image: url(../img/bg-huesos.png);
+	top: 65%;
+    left: 15%;
+}
+
+.molecula .huesos:hover:before{
+	background-image: url(../img/huesos.png);   
+    top: 3%;
+    left: -70%;
+}
+
+.molecula .rendimiento{
+	background-image: url(../img/bg-rendimiento.png);
+	top: 39%;
+    left: 18%;
+    
+}
+
+.molecula .rendimiento:hover:before{
+	background-image: url(../img/rendimiento.png);   
+	top: 3%;
+	left: -66%;
+}
+
+.molecula .equilibrio{
+	background-image: url(../img/bg-equilibrio.png);
+	top: 32%;
+    left: 38%;
+}
+
+.molecula .equilibrio:hover:before{
+	background-image: url(../img/equilibrio.png);   
+	top: -55%;
+	right: -41%;
+}
+.molecula .hepatica{
+	background-image: url(../img/bg-hepatica.png);
+	top: 50%;
+    right: 35%;
+}
+
+.molecula .hepatica:hover:before{
+	background-image: url(../img/hepatica.png);   
+	bottom: -50%;
+	left: 45%;
+}
+
+.molecula .cardiovascular{
+	background-image: url(../img/bg-cardiovascular.png);
+	bottom: 5%;
+    right: 38%;
+}
+
+.molecula .cardiovascular:hover:before{
+	background-image: url(../img/cardiovascular.png);   
+	top: 13%;
+	right: -70%;
+}
+
+.molecula .sexual{
+	background-image: url(../img/bg-sexual.png);
+	bottom: -14px;
+    left: 27%;
+}
+
+.molecula .sexual:hover:before{
+	background-image: url(../img/sexual.png);   
+	bottom: 12%;
+	left: -67%;
+}
+}
+
+
 @media  (min-width: 1024px)
 {
 	
-
-
 h2{
 	text-transform: uppercase;
 	font-weight: bolder;
@@ -46,7 +192,7 @@ h3{
 	margin-bottom: 25px;
 	line-height: 40px;
 }
-p{font-size: 14px;}
+
 
 #section0 {
 	padding: 0;
@@ -63,53 +209,137 @@ p{font-size: 14px;}
 	padding: 25px 0;
 }
 .section article{
-	padding-left: 100px;
+	padding-left: 45px;
 }
 .section article.no-padding-left{
 	padding-left: 0;
 }
 
 
+
+.tabla{
+	margin: 20% 0 25px 0;
+}
+
+svg {
+	max-height: 750px;
+}
 .right{
 	padding-left: 100px;
 }
 
-.tabla{
-	margin: 35% 0 25px 0;
-}
-.btn-descargar{	
-	padding: 15px 70px 15px 30px;
-	background: #183029 url(../img/ico-pdf.png) no-repeat 90% center;
-	color: #d1a157;
-	border-radius: 30px;
-}
-.btn-descargar:hover{
-	text-decoration: none;
-	color:#d1a157;
-}
-svg {
-	height: 450px;
-}
 
 .texto-cuerpo{
 	position: absolute;
-    right: 0;
+    right: 14px;
     bottom: 5%;
+    text-align: right;
+    padding-right: 75px;
 }
 .molecula{
-	margin-top: -80px;
+	margin-top: -30px;
+    margin-bottom: -160px;
+    position: relative;
 }
-ul.tiendas {
-	margin:0;
-	padding: 0
+
+.molecula .atomo{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 120px;
+    height: 85px;
+	position: absolute;
+    transition: transform .2s;
 }
-ul.tiendas li{
-	list-style: none;
-    display: inline;
-    float: left;
-    width: 25%;
-    padding: 10px;
+.molecula .atomo:hover{
+	transform: scale(1.2);
 }
+
+.molecula .atomo:hover:before{
+	display: block;
+	content: "";
+	width: 120px;
+    height: 55px;
+    position: absolute;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+.molecula .huesos{
+	background-image: url(../img/bg-huesos.png);
+	top: 65%;
+    left: 15%;
+}
+
+.molecula .huesos:hover:before{
+	background-image: url(../img/huesos.png);   
+    top: 3%;
+    left: -70%;
+}
+
+.molecula .rendimiento{
+	background-image: url(../img/bg-rendimiento.png);
+	top: 39%;
+    left: 18%;
+    
+}
+
+.molecula .rendimiento:hover:before{
+	background-image: url(../img/rendimiento.png);   
+	top: 3%;
+	left: -66%;
+}
+
+.molecula .equilibrio{
+	background-image: url(../img/bg-equilibrio.png);
+	top: 32%;
+    left: 38%;
+}
+
+.molecula .equilibrio:hover:before{
+	background-image: url(../img/equilibrio.png);   
+	top: -55%;
+	right: -41%;
+}
+.molecula .hepatica{
+	background-image: url(../img/bg-hepatica.png);
+	top: 50%;
+    right: 35%;
+}
+
+.molecula .hepatica:hover:before{
+	background-image: url(../img/hepatica.png);   
+	bottom: -50%;
+	left: 45%;
+}
+
+.molecula .cardiovascular{
+	background-image: url(../img/bg-cardiovascular.png);
+	bottom: 8%;
+    right: 38%;
+}
+
+.molecula .cardiovascular:hover:before{
+	background-image: url(../img/cardiovascular.png);   
+	top: 13%;
+	right: -70%;
+}
+
+.molecula .sexual{
+	background-image: url(../img/bg-sexual.png);
+	bottom: -2%;
+    left: 27%;
+}
+
+.molecula .sexual:hover:before{
+	background-image: url(../img/sexual.png);   
+	bottom: 12%;
+	left: -67%;
+}
+
+
+
 ul.tiendas li.tienda a:hover img {
     transform: scale(1.2);
 }
@@ -117,23 +347,7 @@ ul.tiendas li img{
 	width: 100%;
 	transition: transform .2s;
 }
-.contacto{
-	background: #3a3731;
-	padding: 50px 0;
-	color: #878b89;
-	margin-top: 70px;
-}
-.copyright{
-	background: #4d4942;
-	color: #8d877e;
-	padding: 15px 0 0 0;
-}
-.ubicacion{
-	background-image: url(../img/mapa.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
 
-}
 
 /*Bullets*/
 .fp-right ul li:first-child a.active span,{
@@ -146,23 +360,66 @@ ul.tiendas li img{
 	border: 2px double #183029;
     color: #183029;
 } 
+.vitalidad .fp-tableCell, .vive-joven .fp-tableCell{
+	vertical-align: top;
 }
-@media (min-width: 576px) 
+.show-sm{
+	display: none;
+}
+}
+@media (max-width: 840px) 
 {
+	article{margin-bottom: 50px;}
+	
+	.vive-joven .right, .vitalidad .right{text-align: right;}
+	.ubicacion .producto{text-align: center ;}
+	.ubicacion .producto img{width: 100%;}
+
 	.hidden{display: none;}
+	.show-sm{display: block;}
 	#section0{
 		background: url(../img/slide-sm-01.jpg) no-repeat center center !important;
 		background-size: cover;
 	}
-	.molecula{
-		margin-top: 0;
-	}
+
 	.text-cuerpo{
 		text-align: center;
 	}
 	.tabla{
 		margin: 10px 0 75px 0;
 		text-align: center;
+	}
+	.download{
+		width: 100%;
+		text-align: center;
+	}
+
+	ul.tiendas{
+		margin: 100px 0 0 0;
+		overflow: hidden;
+	}
+	ul.tiendas .tienda img{
+		width: 100%;
+	}
+	.contacto p{
+		font-size: 1rem;
+		margin-bottom: 30px;
+	}
+	svg{
+		max-height: 430px;
+	}
+
+	.teto-cuerpo{
+		text-align: right;
+	}
+
+	.teto-cuerpo img{
+		width: 60%;
+	}
+	.vive-joven .molecula{
+		background: url(../img/molecula-juventa.png) center center no-repeat;
+		min-height: 500px;
+		background-size: cover;
 	}
 
 
